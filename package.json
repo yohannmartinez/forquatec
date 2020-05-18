@@ -13,15 +13,25 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.673.0",
     "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
     "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
     "express": "^4.16.4",
+    "file-type": "^14.3.0",
+    "fs": "0.0.1-security",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.3.11",
+    "multiparty": "^4.2.1",
+    "node-sass": "^4.14.0",
+    "nodemailer": "^6.4.6",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }

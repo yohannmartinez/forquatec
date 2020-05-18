@@ -1,0 +1,40 @@
+.ChangeInformations_globalContainer{
+    position:absolute;
+    width:100%;
+    min-height: 100vh;
+    background-color: #0B0B0D;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChangeInformations_container{
+    width:350px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.changeInformations_input{
+    color:white;
+}
+
+.changeInformations_button{
+    color:white;
+    border:none;
+    padding:1em 0;
+    font-size: 1em;
+    background-color: #4E999B;
+    cursor:pointer;
+    margin-top: 1em;
+    width:100%;
+}
+
+.changeInformations_label{
+    color:white;
+    margin-top:1em
+}

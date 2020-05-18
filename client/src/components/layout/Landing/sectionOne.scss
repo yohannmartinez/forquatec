@@ -1,0 +1,111 @@
+.Landing_sectionOne{
+    height:calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5em
+}
+
+.Landing_sectionOne_left{
+    position: relative;
+    width:60%;
+}
+
+.Landing_sectionOne_left::after{
+    content:"";
+    position: absolute;
+    width:70px;
+    height:5px;
+    background-color: #4E999B;
+    top:0;
+    left:0;
+}
+
+.Landing_sectionOne_title{
+    font-weight: 500;
+    font-size: 3em;
+    color:white;
+    margin: 0.8em 0 0 0;
+}
+
+.Landing_sectionOne_texte{
+    font-weight: 300;
+    font-size: 1.1em;
+    color:rgb(163, 163, 163);
+    line-height: 2em;
+}
+
+.Landing_sectionOne_button{
+    border:2px solid #4E999B;
+    color:#4E999B;
+    background-color: transparent;
+    font-size: 1em;
+    padding: 1.5em 1.5em 1.5em 2em;
+    margin-top: 1em;
+    cursor:pointer;
+    position: relative;
+    z-index: 0;
+    transition: 0.4s ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Landing_sectionOne_button:focus{
+    background: transparent;
+}
+
+.Landing_sectionOne_button::before{
+    content:"";
+    background-color: #4E999B;
+    position: absolute;
+    width:0%;
+    height:100%;
+    top:0%;
+    left:0;
+    z-index: -1;
+    transition: 0.4s ;
+
+}
+
+.Landing_sectionOne_button:hover{
+    color:white;
+}
+
+.Landing_sectionOne_button:hover::before {
+    width: 100%;
+}
+
+.Landing_sectionOne_right{
+    height:100%;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding:3em
+}
+
+.Landing_sectionOne_right_image{
+    width:100%;
+}
+
+.Landing_sectionOne_scroll{
+    filter: invert(100%);
+    position: absolute;
+    bottom: 0;
+    height: 5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scrollAnimation 2s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scrollAnimation {
+    0%,
+    100% {
+      transform: translate(-50%, -50%);
+    }
+    50% {
+      transform: translate(-50%, -60%);
+    }
+  }

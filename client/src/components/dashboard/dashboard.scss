@@ -1,0 +1,36 @@
+.Dasboard_container{
+    min-height: calc(100vh - 70px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.Dashboard_Icon{
+    font-size: 6em;
+    color: #fff;
+}
+
+.Dashboard_userLabel{
+    color:white;
+    display: flex;
+    align-items: center;
+    font-size:1em;
+    margin:0.5em 0;
+}
+
+.Dashboard_userIcon{
+    margin-right: 0.5em;
+}
+
+.Dashboard_userButton{
+    color:white;
+    border:none;
+    padding:1em 0;
+    font-size: 1em;
+    background-color: #4E999B;
+    cursor:pointer;
+    margin-top: 1em;
+    width:15em
+}

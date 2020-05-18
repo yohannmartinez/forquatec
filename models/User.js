@@ -11,6 +11,11 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  emailChecked: {
+    type: String,
+    default: 'False',
+    required: true,
+  },
   password: {
     type: String,
     required: true

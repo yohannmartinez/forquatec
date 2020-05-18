@@ -1,0 +1,55 @@
+.admin_container{
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.admin_button{
+    margin:1em 0;
+    cursor:pointer;
+    color:white;
+    background-color: darkcyan;
+    border:none;
+    padding:1em;
+    display:inline-block
+}
+
+.admin_page{
+    position:absolute;
+    background-color:black ;
+    color:white;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:2em 0
+}
+
+.admin_title{
+    font-size:2em;
+    color:white;
+}
+
+.admin_input{
+    color:white;
+    width:100%;
+}
+
+.admin_box{
+    border:1px solid white;
+    padding:1em;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.admin_image{
+    width:200px;
+    height:auto;
+}
