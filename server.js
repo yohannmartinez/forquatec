@@ -5,8 +5,10 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const articles = require("./routes/api/articles");
 const s3 = require("./routes/api/s3");
-
+const path = require("path");
 const app = express();
+
+app.use(express.static(path.join(__dirname, "client/build")))
 
 // Bodyparser middleware
 app.use(
