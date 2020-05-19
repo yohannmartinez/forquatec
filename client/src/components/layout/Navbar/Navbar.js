@@ -10,12 +10,18 @@ class Navbar extends Component {
     super(props);
     this.state = {
       location: null,
+      pageHeight:null,
+      scroll:null,
+      windowHeight:null,
     };
   }
 
   componentDidMount() {
     this.setState({ location: window.location.pathname.split("/")[1] });
-    console.log(this.props.location.pathname)
+    document.addEventListener('scroll',()=>{
+      this.setState({pageHeight: window.innerHeight, scroll : window.scrollY, windowHeight: document.body.offsetHeight });
+      console.log()
+    })
   }
 
   render() {
@@ -24,16 +30,22 @@ class Navbar extends Component {
         <div className="navbar_globalContainer">
           <div className="navbar_leftContainer">
             <img src={Logo} className="navbar_Logo" />
-            <Link to="" className="navbar_link" style={{ color: this.props.location.pathname === "/" ? "white" : "grey" }}>accueil</Link>
-            <Link to="" className="navbar_link" style={{ color: this.props.location.pathname === "/formations" ? "white" : "grey" }}>formations</Link>
-            <div className="navbar_link" style={{ color: this.props.location.pathname === "/devenirFormateur" ? "white" : "grey" }}>devenir formateur</div>
-            <Link to="/blog" className="navbar_link" style={{ color: this.props.location.pathname === "/blog" ? "white" : "grey" }}>blog</Link>
+            <Link to="" className="navbar_link" style={{ color: this.props.location.pathname === "/" && "#3D3357" }}>Accueil</Link>
+            <Link to="" className="navbar_link" style={{ color: this.props.location.pathname === "/formations" && "#3D3357" }}>Formations</Link>
+            <Link to="" className="navbar_link" style={{ color: this.props.location.pathname === "/quisommmesnous" && "#3D3357" }}>Qui sommes-nous ?</Link>
+            <Link to="/blog" className="navbar_link" style={{ color: this.props.location.pathname === "/contact" && "#3D3357" }}>Contact</Link>
+            <Link to="/blog" className="navbar_link" style={{ color: this.props.location.pathname === "/blog" && "#3D3357"  }}>Blog</Link>
           </div>
-          {this.props.auth.user.name ? <Link to="/dashboard" className="navbar_rightContainer"><span className="material-icons navbar_profile">
-            account_circle
-</span>{this.props.auth.user.name}</Link> : <Link to="/login" className="navbar_rightContainer"><span className="material-icons navbar_profile">
-              account_circle
-</span>connexion</Link>}
+          <div className="navbar_rightContainer">
+            {this.props.auth.user.name ? 
+            <Link to="/dashboard" className="navbar_rightContainer"><span className="material-icons navbar_profile">account_circle</span>{this.props.auth.user.name}</Link> 
+            :
+            <div><Link to="/register" className="navbar_inscriptionButton">Inscription</Link><Link to="/login" className="navbar_connexionButton">Connexion</Link></div>
+            }
+          </div>
+        </div>
+        <div className="navbar_progressBarContainer">
+            <div className="navbar_progressBar" style={{width: `${Math.abs(  this.state.scroll / (this.state.pageHeight - this.state.windowHeight) * 100)}%` }}></div>
         </div>
       </div>
     );

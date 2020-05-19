@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "./sectionTwo.scss"
 
 //images
-import Virus from "../../../assets/Landing/virus.png"
+import Virus from "../../../assets/Landing/sectionTwo.svg"
 
 class SectionTwo extends Component {
   render() {
@@ -12,14 +12,13 @@ class SectionTwo extends Component {
         <div className="Landing_sectionTwo_left">
           <img src={Virus} className="Landing_sectionTwo_right_image" />
         </div>
-        <div className="Landing_sectionTwo_right">
-          <h1 className="Landing_sectionTwo_title">Actualité de dernière minute !</h1>
-          <p className="Landing_sectionTwo_texte">La crise sanitaire Coronavirus Covid-19 a impacté fortement le monde de l’entreprise, et la reprise
-          mérite d’être traité avec le plus grand soin, si on ne veut pas subir la fameuse deuxième vague.
+        <div className=" Landing_sectionTwo_right">
+          <h1 className="global_title Landing_sectionTwo_title">Actualité de dernière minute !</h1>
+          <p className="global_text Landing_sectionTwo_texte">La crise sanitaire Coronavirus <b>Covid-19</b> a impacté fortement le monde de l’entreprise, et la reprise
+          mérite d’être traité avec le plus grand soin, <b>si on ne veut pas subir la fameuse deuxième vague.</b>
           Forquatec vous propose une nouvelle formation pour répondre à vos obligations de chef
           d’entreprise, garant de la bonne santé mentale et physique de vos collaborateurs.</p>
-          <button className="Landing_sectionTwo_button">Consulter gratuitement le programme de formation <span class="material-icons" style={{ fontSize: "1.6em", paddingTop: "0.05em" }}>navigate_next</span>
-          </button>
+          <button className="global_buttonLeft Landing_sectionTwo_button">Consulter gratuitement le programme de formation !</button>
         </div>
 
       </div>

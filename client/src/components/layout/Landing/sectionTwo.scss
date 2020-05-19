@@ -2,14 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:5em;
+    padding:5em 1em;
 }
 
 .Landing_sectionTwo_left{
     flex:1;
     height:100%;
     text-align: center;
-    filter: brightness(0.7);
 }
 
 .Landing_sectionTwo_right_image{
@@ -23,44 +22,16 @@
     padding-left:1em
 }
 
-.Landing_sectionTwo_right::after{
-    content:"";
-    position: absolute;
-    width:70px;
-    height:5px;
-    background-color: #AF3648;
-    top:0;
-    right:0;
-}
-
 .Landing_sectionTwo_title{
-    font-weight: 500;
-    font-size: 3em;
-    color:white;
-    margin: 0.8em 0 0 0;
+    
 }
 
 .Landing_sectionTwo_texte{
-    font-weight: 300;
-    font-size: 1.1em;
-    color:rgb(163, 163, 163);
-    line-height: 2em;
+    padding-left: 2em;
 }
 
 .Landing_sectionTwo_button{
-    border:2px solid #AF3648;
-    color:#AF3648;
-    background-color: transparent;
-    font-size: 1em;
-    padding: 1.5em 1.5em 1.5em 2em;
-    margin-top: 1em;
-    cursor:pointer;
-    position: relative;
-    z-index: 0;
-    transition: 0.4s ;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1.5em;
 }
 
 .Landing_sectionTwo_button:focus{

@@ -21,7 +21,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Admin from "./components/admin/dashboard/index";
 import NotFound from "./components/notFound/notFound"
 
-import "./App.css";
+import "./App.scss";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
