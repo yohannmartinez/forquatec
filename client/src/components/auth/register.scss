@@ -1,0 +1,41 @@
+.Register_container{
+    width:100%;
+    height:calc(100vh - 80px);
+    padding:2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Register_backHomeButton{
+    color:#3D3357;
+    text-decoration:underline;
+}
+
+.Register_createAccount{
+    color:#3D3357;
+    text-align: center;
+}
+.Register_formContainer{
+    display: block;
+    text-align: center;
+}
+.Register_inputField{
+    position: relative;
+    color:#3D3357;
+    margin:1em 0;
+    width:400px
+}
+
+.Register_input{
+    border-bottom: none;
+}
+
+.Register_input:focus{
+    border-bottom: 2px solid #3D3357;
+}
+
+.Register_RegisterButton{
+    margin-top: 3em;
+}

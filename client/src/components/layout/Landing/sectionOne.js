@@ -4,7 +4,6 @@ import "./sectionOne.scss"
 
 //images
 import illustration from "../../../assets/Landing/sectionOne.svg"
-import Scroll from "../../../assets/Landing/scroll.svg"
 
 class SectionOne extends Component {
     render() {
@@ -21,7 +20,6 @@ class SectionOne extends Component {
             <div className="Landing_sectionOne_right">
               <img src={illustration} className="Landing_sectionOne_right_image" />
             </div>
-            <img src={Scroll} className="Landing_sectionOne_scroll" />
           </div>
       );
     }

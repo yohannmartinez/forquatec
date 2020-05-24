@@ -34,23 +34,3 @@
     width:100%;
 }
 
-.Landing_sectionOne_scroll{
-    filter: invert(100%);
-    position: absolute;
-    bottom: 0;
-    height: 5em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: scrollAnimation 2s infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes scrollAnimation {
-    0%,
-    100% {
-      transform: translate(-50%, -50%);
-    }
-    50% {
-      transform: translate(-50%, -60%);
-    }
-  }

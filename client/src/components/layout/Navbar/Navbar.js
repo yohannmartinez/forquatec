@@ -10,18 +10,12 @@ class Navbar extends Component {
     super(props);
     this.state = {
       location: null,
-      pageHeight:null,
-      scroll:null,
-      windowHeight:null,
     };
   }
 
   componentDidMount() {
     this.setState({ location: window.location.pathname.split("/")[1] });
-    document.addEventListener('scroll',()=>{
-      this.setState({pageHeight: window.innerHeight, scroll : window.scrollY, windowHeight: document.body.offsetHeight });
-      console.log()
-    })
+    
   }
 
   render() {
@@ -43,9 +37,6 @@ class Navbar extends Component {
             <div><Link to="/register" className="navbar_inscriptionButton">Inscription</Link><Link to="/login" className="navbar_connexionButton">Connexion</Link></div>
             }
           </div>
-        </div>
-        <div className="navbar_progressBarContainer">
-            <div className="navbar_progressBar" style={{width: `${Math.abs(  this.state.scroll / (this.state.pageHeight - this.state.windowHeight) * 100)}%` }}></div>
         </div>
       </div>
     );

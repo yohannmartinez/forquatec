@@ -31,7 +31,7 @@ if (localStorage.jwtToken) {
   // Decode token and get user info and exp
   const decoded = jwt_decode(token);
   // Set user and isAuthenticated
-  console.log("decoded",decoded)
+  console.log("decoded", decoded)
   store.dispatch(setCurrentUser(decoded));
   // Check for expired token
   const currentTime = Date.now() / 1000; // to get in milliseconds
@@ -46,7 +46,7 @@ if (localStorage.jwtToken) {
 
 
 class App extends Component {
-  
+
   render() {
     return (
       <Provider store={store}>
@@ -54,6 +54,7 @@ class App extends Component {
           <div className="app">
             <div className="content">
               <Navbar />
+              <div className="content__padding"></div>
               <Switch>
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/auth" component={AuthHome} />
@@ -67,7 +68,7 @@ class App extends Component {
                 <Route path="*" component={NotFound} />
 
 
-                
+
               </Switch>
             </div>
           </div>

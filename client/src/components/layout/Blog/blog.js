@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios"
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./blog.scss"
 
 class Blog extends Component {
@@ -22,9 +22,9 @@ class Blog extends Component {
     return (
       <div className="Blog">
         {this.state.articles &&
-          <div className="Blog_progressbarContainer">
-        <h1 className="Blog_title">Blog</h1>
-            <span className="Blog_progressbarText">Retrouvez ici tous les articles rédigés par forquatec </span>
+          <div className="Blog_headerContainer">
+            <h1 className="global_title">Blog</h1>
+            <span className="Blog_headerText">Retrouvez ici tous les articles rédigés par <b>Forquatec</b> </span>
           </div>
         }
 

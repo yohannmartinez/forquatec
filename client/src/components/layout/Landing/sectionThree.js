@@ -24,14 +24,9 @@ class SectionThree extends Component {
   render() {
     return (
       <div className="Landing_sectionThree">
-        <h1 className="Landing_sectionThree_title">Les Dernières Actualités</h1>
+        <h1 className="global_title Landing_sectionThree_title">Blog</h1>
         {this.state.articles &&
-          <div className="Landing_sectionThree_progressbarContainer">
             <span className="Landing_sectionThree_progressbarText">3 articles sur {Object.keys(this.state.articles).length}</span>
-            <div className="Landing_sectionThree_progressbar">
-              <div className="Landing_sectionThree_progressbarContent" style={{ width: `${100 * 3 / Object.keys(this.state.articles).length}%` }}></div>
-            </div>
-          </div>
         }
 
         {this.state.articles &&
@@ -54,7 +49,7 @@ class SectionThree extends Component {
         }
 
         <div className="Landing_sectionThree_buttonAllArticlesContainer">
-          <Link to="/blog" className="Landing_sectionThree_buttonAllArticles">Voir tous les articles</Link>
+          <Link to="/blog" className="global_buttonRight">Voir tous les articles</Link>
         </div>
       </div>
     );
